@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors');
 const { db } = require('./db/db');
+const { SQLdb } = require('./db/SQLdb');
 const {readdirSync} = require('fs')
 const app = express()
 
