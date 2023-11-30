@@ -3,8 +3,8 @@ const Sequelize = require("sequelize");
 const { DataTypes } = require("sequelize");
 const sequelizeInstance = new Sequelize(
     'ExpenseTrackerDB',
-    'root',
-    'Keeptrying9@',
+    process.env.DB_USER,
+    process.env.DB_PASSWORD,
     {
         host: 'localhost',
         dialect: 'mysql'
